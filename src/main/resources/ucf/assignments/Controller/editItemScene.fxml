@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="550.0" prefWidth="647.0" style="-fx-background-color: #35DCCA;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Controller.Controller">
+   <left>
+       <AnchorPane prefHeight="550.0" prefWidth="252.0" BorderPane.alignment="CENTER">
+           <Label fx:id="errorItemNameE" layoutX="26.0" layoutY="210.0" textFill="RED">
+              <font>
+                  <Font name="System Bold Italic" size="11.0" />
+              </font>
+           </Label>
+           <Text layoutX="52.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item name" textAlignment="CENTER" wrappingWidth="84.748046875">
+              <font>
+                  <Font name="System Bold Italic" size="14.0" />
+              </font>
+           </Text>
+         <TextField fx:id="editItemNameField" layoutX="26.0" layoutY="185.0" prefHeight="25.0" prefWidth="136.0" promptText="This is the item's name" />
+       </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="411.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="appTitle" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="-26.0" layoutY="14.0" prefHeight="72.0" prefWidth="193.0" text="Tchu Tchu List" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Broadway" size="26.0" />
+               </font>
+            </Label>
+            <Text layoutX="17.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item description">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="198.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item due date" textAlignment="CENTER" wrappingWidth="164.302734375">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+              <ImageView fx:id="logo" fitHeight="131.0" fitWidth="160.0" layoutX="5.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+                 <image>
+                     <Image url="@../../../../../../images/logo.png" />
+                 </image>
+              </ImageView>
+            <TextArea fx:id="editDescArea" layoutX="-22.0" layoutY="185.0" prefHeight="106.0" prefWidth="188.0" promptText="This is the item's description" />
+            <Button fx:id="finishEditingBtn" layoutX="27.0" layoutY="340.0" mnemonicParsing="false" onAction="#finishEditing" text="Finish Editing" />
+            <TextField fx:id="editDueDateField" layoutX="206.0" layoutY="185.0" promptText="Curr date: YYYY-MM-DD" />
+            <Label fx:id="errorLabelDescriptionE" layoutX="-18.0" layoutY="291.0" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLabelDueDateE" layoutX="206.0" layoutY="210.0" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

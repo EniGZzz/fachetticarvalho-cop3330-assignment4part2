@@ -1,0 +1,87 @@
+@startuml
+' in this diagram, the package keyword in plantUML represents just a grouping of behaviors, not just only actual packages
+' packages = collection
+
+!define COMMENT(x) <color:grey>x</color>
+
+package Info <<Folder>>
+{
+    class TodoList
+    {
+        + List <Item>
+        + currItemIndex
+
+        + createItem() COMMENT(-> adds description and due date)
+        + deleteItem()
+
+        + sortItemsByCreation() COMMENT("-> default sort, will have a button for this")
+        + sortItemsByDueDate() COMMENT(-> will have a button for this)
+
+        + showCompletedItems() COMMENT(-> will have a button for this)
+        + showIncompleteItems() COMMENT(-> will have a button for this)
+        + editItemInList()
+        + addItemToList()
+        + deleteAllItems()
+        + showIncompleteItems()
+        + showCompleteItems()
+        + showDefault()
+    }
+
+    class Item
+    {
+        + itemName
+        + description
+        + dueDate
+        + completeState
+
+        + findItem()
+        + {static} checksDescription()
+        + {static} checksDate()
+        + {static} infoText()
+    }
+}
+
+class FileCommunicator
+{
+    + filePath
+
+    + saveInfoToFile()
+    + loadInfoFromFile()
+}
+
+package Controllers <<Folder>>
+{
+    class Controller
+    {
+        + has multiple methods() connecting\n the UI and the backend data
+    }
+}
+
+package Database <<Database>>
+{
+}
+
+package User_Interface <<Folder>>
+{
+    interface UI
+    note right: represents the displayed interface\n (NOT a code-wise interface)
+}
+
+' end of packages and classes declaration
+
+' relations inside the "Info" package
+TodoList -> Item
+
+
+' connecting how the program will work
+' -------------------------------------
+Database -right> FileCommunicator : sends info for loading
+Database <-right FileCommunicator : gets info for saving
+Database <---> User_Interface : If there's any information retrieved from the data base,\n that info is sent to be displayed to the User Interface. \n\n When application is closed, check for any info to be saved.\n If any new changes was made by user, save it to the data base.
+User_Interface <---> Controllers : links the Controllers and the user interface , which is the bridge \n between the user inputs and the communication with the backend \n info stored, like created lists and items in each list.
+Controllers <---> Info : after user input is processed, stores the \n necessary info into a DS as necessary.
+
+
+
+
+@enduml

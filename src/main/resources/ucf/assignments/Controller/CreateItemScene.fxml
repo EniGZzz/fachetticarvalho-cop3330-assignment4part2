@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="550.0" prefWidth="647.0" style="-fx-background-color: #35DCCA;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Controller.Controller">
+   <left>
+      <AnchorPane prefHeight="550.0" prefWidth="252.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logo" fitHeight="131.0" fitWidth="160.0" layoutX="30.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../images/logo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="84.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the Item name" textAlignment="CENTER" wrappingWidth="84.748046875">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="errorItemName" layoutX="47.0" layoutY="229.0" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+            <TextField fx:id="itemNameField" layoutX="52.0" layoutY="204.0" promptText="Enter item name" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="411.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="appTitle" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="-26.0" layoutY="14.0" prefHeight="72.0" prefWidth="193.0" text="Tchu Tchu List" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Broadway" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="finishCreatingBtn" layoutX="32.0" layoutY="385.0" mnemonicParsing="false" onAction="#finishCreating" text="Create Item" />
+            <TextField fx:id="dueDateField" layoutX="228.0" layoutY="201.0" onAction="#enterKeyPressedOnCreateItemScene" promptText="Enter as YYYY-MM-DD" />
+            <Text layoutX="32.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the description">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="descriptionBox" layoutY="189.0" prefHeight="90.0" prefWidth="200.0" promptText="What is to do?" />
+            <Text layoutX="228.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the due date (Format: YYYY- MM- DD)" wrappingWidth="164.302734375">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="errorLabelDescription" layoutX="2.0" layoutY="279.0" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLabelDueDate" layoutX="230.0" layoutY="226.0" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
