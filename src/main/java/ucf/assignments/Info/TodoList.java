@@ -25,7 +25,6 @@ public class TodoList
 
     // COMPLETE
     private Items createItem(String itemName, String itemDescription, String itemDueDate) throws ParseException {
-        // create Item
         return new Items(itemDescription, itemDueDate, itemName);
     }
 
@@ -58,10 +57,6 @@ public class TodoList
     {
         this.itemsList.clear();
     }
-
-
-
-
 
     // changes the display to show only incomplete Items
     public List<Items> showIncompleteItems()
@@ -100,16 +95,6 @@ public class TodoList
     {
         return this.itemsList;
     }
-
-
-
-
-
-
-
-
-
-
 
     @Override
     public String toString() {

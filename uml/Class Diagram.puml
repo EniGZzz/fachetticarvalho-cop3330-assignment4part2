@@ -47,6 +47,7 @@ class FileCommunicator
 
     + saveInfoToFile()
     + loadInfoFromFile()
+    - inputToItems()
 }
 
 package Controllers <<Folder>>
