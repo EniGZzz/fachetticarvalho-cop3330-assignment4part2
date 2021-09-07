@@ -5,7 +5,7 @@
  ### Main Screen
 
 <p align="center">
-  <img src="https://github.com/EniGZzz/fachetticarvalho-cop3330-assignment5/blob/master/images/MainScreen%20SC.PNG?raw=true"/>
+  <img src="https://raw.githubusercontent.com/pedrofcarvalho/fachetticarvalho-cop3330-assignment4part2/master/images/MainScreen%20SC.PNG"/>
 </p>
 
 Here follows explanation of all functionalities that are included in the main screen:
@@ -34,7 +34,7 @@ Here follows explanation of all functionalities that are included in the main sc
 ### Create Item Scene
 
 <p align="center">
-  <img src="https://github.com/EniGZzz/fachetticarvalho-cop3330-assignment5/blob/master/images/Create%20Scene%20SC.PNG"/>
+  <img src="https://raw.githubusercontent.com/pedrofcarvalho/fachetticarvalho-cop3330-assignment4part2/master/images/Create%20Scene%20SC.PNG"/>
 </p>
 
 For the "Create Item Scene", it is required to input information as request (such as date in the YYYY-MM-DD format)
@@ -48,16 +48,7 @@ After inserting all the new item's info, hit the "Create Item" button
 ### Edit Item Screen
 
 <p align="center">
-  <img src="https://github.com/EniGZzz/fachetticarvalho-cop3330-assignment5/blob/master/images/Edit%20Scene%20SC.PNG"/>
+  <img src="https://raw.githubusercontent.com/pedrofcarvalho/fachetticarvalho-cop3330-assignment4part2/master/images/Edit%20Scene%20SC.PNG"/>
 </p>
 
 The same step from the "Create Item Scene" applies here
-
-####
-
-*<center>__<ins>A SPECIAL THANKS TO REY FOR HIS DEDICATION AND LOVE FOR US ALL</ins></center>__*
-
-
-<p align="center">
-  <img src="https://thumbnails-photos.amazon.com/v1/thumbnail/WSdxMKgIQ0-2a2z9CdQNKQ?viewBox=350&ownerId=A3LYR4BG27S77&groupShareToken=QMRh43QBSo-71aty5kO9DQ.-6vpOLFxnw7Vchw9-Z5rbq" alt="Sublime's custom image"/>
-</p>
