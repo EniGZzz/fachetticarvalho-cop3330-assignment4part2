@@ -21,7 +21,7 @@ public class App extends Application
     // The only To-do list related object, which will store all the data from the same session (used in the Controller class mainly)
     public static TodoList listInfo = new TodoList();
 
-    private static final FileCommunicator fileManipulator = new FileCommunicator("storage files/itemsInfo.txt");
+    private static final FileCommunicator fileManipulator = new FileCommunicator("storage_files/itemsInfo.txt");
 
     @Override
     public void start(Stage primaryStage)

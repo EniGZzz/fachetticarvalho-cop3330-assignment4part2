@@ -71,14 +71,6 @@ public class Controller implements Initializable
 
 
 
-
-
-
-
-
-
-
-
     // start of mainScene methods
 
 
